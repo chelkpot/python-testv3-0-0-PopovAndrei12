@@ -5,7 +5,7 @@ def solve():
     n=int(input())
     n=n%86400
     hours = n//3600
-    minutes=n//60
+    minutes = (n % 3600) // 60
     seconds=n%60
     print(hours,':' ,minutes//10,minutes%10,':' ,seconds//10, seconds%10,sep="")
     
